@@ -1,0 +1,308 @@
+/* 全域設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-color: #444444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    border-width: 18px;
+    border-color: #969993;
+}
+
+/* 導覽列 */
+.navbar {
+    background: linear-gradient(90deg, #87CEFA, #4FACFE); /* 天藍漸層 */
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #ffffff;
+    color: #4FACFE;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Main */
+main {
+    padding: 30px;
+}
+
+/* Card 容器 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card 設定 */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+    width: 15%;
+}
+
+/* 圖片 */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* 虛線 */
+.card hr {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top: 2px solid rgba(218,35,38,1.00);
+    margin: 10px 0;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(218,35,38,1.00);
+    border-right-color: rgba(218,35,38,1.00);
+    border-left-color: rgba(218,35,38,1.00);
+}
+
+/* 文字 */
+.card p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #87CEFA, #4FACFE);
+    color: white;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* icon區 */
+.social-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #4FACFE;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Content 區域新增樣式 */
+
+/* Hero 區 */
+.content .hero {
+    background: url('https://picsum.photos/id/1003/1200/500') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.content .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.content .cta-btn {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* 熱門行程滑動列 */
+.popular-tours {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.popular-tours h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.tour-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.tour-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.tour-slider::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 10px;
+    min-width: 250px;
+    flex: 0 0 auto;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tour-card img {
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tour-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.tour-card p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* 為什麼選擇我們 */
+.why-choose-us {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.why-choose-us ul {
+    list-style: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+}
+
+.why-choose-us ul li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.why-choose-us ul li::before {
+    content: "✔";
+    color: #ff7f50;
+    position: absolute;
+    left: 0;
+}
+
+/* 主題旅遊分類 */
+.tour-categories {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+}
+
+.tour-categories h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.category-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.category-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    padding: 10px 0;
+}
+
+/* RWD：平板 */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+    .tour-card {
+        min-width: 200px;
+    }
+}
+
+/* RWD：手機 */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+    .tour-card {
+        min-width: 180px;
+    }
+}

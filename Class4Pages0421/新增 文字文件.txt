@@ -1,0 +1,176 @@
+我有一頁面nav.html,語法如下:
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<link href="../style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav  class= "navbar">
+		
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="about.html">公司介紹</a></li>
+                <li><a href="product.html">產品介紹</a></li>
+                <li><a href="order.html">餐點訂購</a></li>
+                <li><a href="contact.html">聯繫我們</a></li>
+				<li><a href="feedback.html">回饋</a></li>
+            </ul>
+		
+        </nav>
+</body>
+</html>
+對應style.css語法如下:
+/* 全域設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-width: 10px;
+    border-color: #444444;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    border-width: 18px;
+    border-color: #969993;
+}
+
+
+.navbar {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #6266A6;
+    text-decoration: none;
+    font-size: 20px;
+    border-bottom: 5px solid #B99DBC;
+}
+
+.navbar a:hover {
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Main */
+main {
+    padding: 30px;
+}
+
+/* Card 容器 */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card 設定 */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+    width: 15%;
+}
+
+/* 圖片 */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* 虛線 */
+.card hr {
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top: 2px solid rgba(218,35,38,1.00);
+    margin-top: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(218,35,38,1.00);
+    border-right-color: rgba(218,35,38,1.00);
+    border-left-color: rgba(218,35,38,1.00);
+}
+
+/* 文字 */
+.card p {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+
+/* 版權文字 */
+footer p {
+    text-align: center;
+}
+
+/* icon區 */
+.social-icons {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffd700;
+    transform: scale(1.2);
+}
+.content h1 {
+    margin-left: 80px;
+    margin-top: 15px;
+    border-top-left-radius: 0px;
+    border: 10px solid #ABADCC;
+    width: 10pc;
+}
+
+
+
+/* RWD：平板 */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 一列2張 */
+    }
+}
+
+/* RWD：手機 */
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 一列1張 */
+    }
+}
+
+請在不修改html語法的前提下，調整
+style.css, 讓nav.html的呈現為活潑
+風格 +天藍色
