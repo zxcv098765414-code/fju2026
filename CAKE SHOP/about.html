@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>關於我們｜薰仔蛋糕店</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== 全站設定 ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f6f1ea;
+    color:#3d3028;
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.8;
+}
+
+/* ===== NAV（沿用首頁風格） ===== */
+
+nav{
+    background:#2a1f18;
+    text-align:center;
+    padding:20px;
+    border-bottom:2px solid #c8a97e;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav a{
+    color:#f8f2eb;
+    text-decoration:none;
+    margin:0 22px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:20px;
+    letter-spacing:2px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d8bc94;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    height:55vh;
+    background:
+    linear-gradient(rgba(20,15,10,0.55), rgba(20,15,10,0.55)),
+    url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:60px;
+    letter-spacing:5px;
+}
+
+.hero p{
+    margin-top:10px;
+    letter-spacing:3px;
+    color:#f2e7d7;
+}
+
+/* ===== ABOUT 內容 ===== */
+
+.about{
+    padding:100px 12%;
+}
+
+.about-container{
+    display:flex;
+    gap:70px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+/* 左圖 */
+
+.about-img{
+    flex:1;
+}
+
+.about-img img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* 右文 */
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:48px;
+    margin-bottom:20px;
+    color:#4b382f;
+}
+
+.about-text p{
+    color:#6b564b;
+    margin-bottom:15px;
+    font-size:16px;
+}
+
+/* ===== 品牌理念 ===== */
+
+.mission{
+    background:#efe5d8;
+    padding:90px 12%;
+    text-align:center;
+}
+
+.mission h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.mission p{
+    max-width:800px;
+    margin:auto;
+    color:#6a564b;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:#241912;
+    color:#f7efe5;
+    text-align:center;
+    padding:40px;
+    border-top:3px solid #c8a97e;
+}
+
+/* ===== RWD ===== */
+
+@media(max-width:768px){
+
+    .about-container{
+        flex-direction:column;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+   <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">商品介紹</a>
+    <a href="hotcake.html">熱門蛋糕</a>
+    <a href="news.html">最新消息</a>
+    <a href="order.html">線上訂購</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="member.html">會員專區</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>品牌故事</h1>
+    <p>BRITISH CLASSIC CAKE HOUSE</p>
+</div>
+
+<!-- ABOUT -->
+<section class="about">
+
+    <div class="about-container">
+
+        <div class="about-img">
+            <img src="https://images.unsplash.com/photo-1519671282429-b44660ead0a7?q=80&w=1200&auto=format&fit=crop" alt="蛋糕工作室">
+        </div>
+
+        <div class="about-text">
+
+            <h2>關於薰仔蛋糕店</h2>
+
+            <p>
+                薰仔蛋糕店誕生於對英式下午茶文化的熱愛，
+                我們相信甜點不只是食物，而是一種生活儀式。
+            </p>
+
+            <p>
+                每一顆蛋糕皆由職人手工製作，
+                堅持使用天然食材與細緻工法，
+                呈現最純粹的甜點風味。
+            </p>
+
+            <p>
+                在這裡，每一口都是優雅與溫度的交會。
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MISSION -->
+<section class="mission">
+
+    <h2>品牌理念</h2>
+
+    <p>
+        我們希望打造的不只是蛋糕店，
+        而是一個讓人放慢步調、享受午後時光的英倫甜點空間。
+    </p>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 薰仔蛋糕店 ｜ British Classic Dessert House
+</footer>
+
+</body>
+</html>

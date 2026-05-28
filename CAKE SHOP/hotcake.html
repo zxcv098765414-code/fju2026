@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>熱門蛋糕｜巧克力經典｜薰仔蛋糕店</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== 基本 ===== */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#f6f1ea;
+    color:#3d3028;
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.8;
+}
+
+/* ===== NAV ===== */
+nav{
+    background:#2a1f18;
+    text-align:center;
+    padding:18px;
+    border-bottom:2px solid #c8a97e;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav a{
+    color:#f8f2eb;
+    text-decoration:none;
+    margin:0 16px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+nav a:hover{color:#d8bc94;}
+
+/* ===== HERO ===== */
+.hero{
+    height:45vh;
+    background:
+    linear-gradient(rgba(20,15,10,0.6), rgba(20,15,10,0.6)),
+    url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:54px;
+    letter-spacing:4px;
+}
+
+.hero p{
+    color:#f2e7d7;
+    margin-top:10px;
+}
+
+/* ===== 內容 ===== */
+.container{
+    padding:80px 12%;
+}
+
+/* 標題 */
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:50px;
+    color:#4b382f;
+}
+
+.title p{
+    color:#7a6558;
+    letter-spacing:2px;
+}
+
+/* ===== 主內容 ===== */
+.content{
+    display:flex;
+    gap:60px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.image-box{
+    flex:1;
+}
+
+.image-box img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+.text-box{
+    flex:1;
+}
+
+.text-box h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:36px;
+    margin-bottom:20px;
+    color:#4b382f;
+}
+
+.text-box p{
+    margin-bottom:14px;
+    color:#6a564b;
+}
+
+/* ===== 圖片集 ===== */
+.gallery{
+    margin-top:70px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#241912;
+    color:#f7efe5;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+    border-top:3px solid #c8a97e;
+}
+
+/* ===== RWD ===== */
+@media(max-width:768px){
+    .hero h1{font-size:38px;}
+    .content{flex-direction:column;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">商品介紹</a>
+    <a href="hotcake.html">熱門蛋糕</a>
+    <a href="news.html">最新消息</a>
+    <a href="order.html">線上訂購</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="member.html">會員專區</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>熱門蛋糕</h1>
+    <p>CHOCOLATE CLASSIC CAKE</p>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <div class="title">
+        <h2>巧克力經典蛋糕</h2>
+        <p>RICH & ELEGANT BRITISH DESSERT</p>
+    </div>
+
+    <div class="content">
+
+        <!-- 圖片 -->
+        <div class="image-box">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=1200&auto=format&fit=crop" alt="巧克力蛋糕切片">
+        </div>
+
+        <!-- 雙語介紹 -->
+        <div class="text-box">
+
+            <h3>華麗濃郁的經典之作</h3>
+			 <p>
+                 <b></b>選用比利時高級黑巧克力製作，口感濃郁滑順，帶有微苦與甜香的平衡。
+            </p>
+<p>
+          <b></b> Made with premium Belgian dark chocolate, offering a rich, smooth texture with a perfect balance of bitterness and sweetness.
+            </p>
+
+            <p>
+                <b></b>外層為絲滑巧克力甘納許，內層蛋糕體濕潤柔軟。
+            </p>
+
+            <p>
+                <b></b> Covered with silky chocolate ganache and soft, moist sponge layers inside.
+            </p>
+
+            <p>
+                <b></b>適合搭配紅茶或拿鐵，提升午後甜點儀式感。
+            </p>
+
+            <p>
+                <b></b> Perfectly paired with black tea or latte for a refined afternoon tea experience.
+            </p>
+
+        </div>
+
+    </div>
+
+ 
+
+<!-- FOOTER -->
+<footer>
+    © 2025 薰仔蛋糕店 ｜ British Classic Dessert House
+</footer>
+
+</body>
+</html>

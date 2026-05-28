@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>會員專區｜薰仔蛋糕店</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== 基本 ===== */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#f6f1ea;
+    color:#3d3028;
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.8;
+}
+
+/* ===== NAV ===== */
+nav{
+    background:#2a1f18;
+    text-align:center;
+    padding:18px;
+    border-bottom:2px solid #c8a97e;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav a{
+    color:#f8f2eb;
+    text-decoration:none;
+    margin:0 16px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+nav a:hover{color:#d8bc94;}
+
+/* ===== HERO ===== */
+.hero{
+    height:40vh;
+    background:
+    linear-gradient(rgba(20,15,10,0.6), rgba(20,15,10,0.6)),
+    url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:54px;
+    letter-spacing:5px;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#f2e7d7;
+}
+
+/* ===== 內容 ===== */
+.container{
+    padding:80px 10%;
+}
+
+/* ===== 會員區塊 ===== */
+.member-box{
+    display:flex;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+/* 表單 */
+.form{
+    flex:1;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+.form h2{
+    font-family:'Cormorant Garamond', serif;
+    margin-bottom:20px;
+    font-size:34px;
+    color:#4b382f;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+    color:#6a564b;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #d8c6b3;
+    border-radius:8px;
+}
+
+button{
+    margin-top:20px;
+    width:100%;
+    padding:12px;
+    background:#5b4335;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:'Cormorant Garamond';
+    letter-spacing:2px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#c8a97e;
+    color:#2a1f18;
+}
+
+/* ===== 會員福利 ===== */
+.info{
+    flex:1;
+}
+
+.info h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.benefit{
+    background:white;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+}
+
+.benefit h3{
+    font-family:'Cormorant Garamond';
+    color:#4b382f;
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#241912;
+    color:#f7efe5;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+    border-top:3px solid #c8a97e;
+}
+
+/* ===== RWD ===== */
+@media(max-width:768px){
+    .member-box{flex-direction:column;}
+    .hero h1{font-size:38px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">商品介紹</a>
+    <a href="hotcake.html">熱門蛋糕</a>
+    <a href="news.html">最新消息</a>
+    <a href="order.html">線上訂購</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="member.html">會員專區</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>會員專區</h1>
+    <p>MEMBER LOGIN & BENEFITS</p>
+</div>
+
+<!-- 內容 -->
+<div class="container">
+
+    <div class="member-box">
+
+        <!-- 登入表單 -->
+        <div class="form">
+            <h2>會員登入 / Login</h2>
+
+            <label>帳號 Username</label>
+            <input type="text" placeholder="輸入帳號">
+
+            <label>密碼 Password</label>
+            <input type="password" placeholder="輸入密碼">
+
+            <button>登入 Login</button>
+
+            <p style="margin-top:15px;color:#7a6558;">
+                還沒有會員？請聯絡我們或加入活動取得帳號。
+            </p>
+        </div>
+
+        <!-- 會員福利 -->
+        <div class="info">
+            <h2>會員福利</h2>
+
+            <div class="benefit">
+                <h3>🎂 生日優惠</h3>
+                <p>生日當月享免費蛋糕切片一份。</p>
+            </div>
+
+            <div class="benefit">
+                <h3>🍰 積分回饋</h3>
+                <p>消費累積點數，可折抵下一次購買。</p>
+            </div>
+
+            <div class="benefit">
+                <h3>☕ 專屬活動</h3>
+                <p>會員優先參加新品試吃與下午茶活動。</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 薰仔蛋糕店 ｜ British Classic Dessert House
+</footer>
+
+</body>
+</html>

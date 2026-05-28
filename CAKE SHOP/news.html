@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>最新消息｜薰仔蛋糕店</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== 基本 ===== */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#f6f1ea;
+    color:#3d3028;
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.8;
+}
+
+/* ===== NAV（跟首頁一致） ===== */
+nav{
+    background:#2a1f18;
+    text-align:center;
+    padding:18px;
+    border-bottom:2px solid #c8a97e;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav a{
+    color:#f8f2eb;
+    text-decoration:none;
+    margin:0 16px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+nav a:hover{
+    color:#d8bc94;
+}
+
+/* ===== Banner ===== */
+.banner{
+    height:40vh;
+    background:
+    linear-gradient(rgba(20,15,10,0.6), rgba(20,15,10,0.6)),
+    url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    color:white;
+}
+
+.banner h1{
+    font-family:'Cormorant Garamond', serif;
+    font-size:54px;
+    letter-spacing:5px;
+}
+
+.banner p{
+    margin-top:10px;
+    color:#f2e7d7;
+}
+
+/* ===== 內容 ===== */
+.container{
+    padding:80px 10%;
+}
+
+/* 標題 */
+.title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.title h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:48px;
+    color:#4b382f;
+}
+
+.title p{
+    color:#7a6558;
+    letter-spacing:2px;
+}
+
+/* ===== 卡片 ===== */
+.news-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card h3{
+    font-family:'Cormorant Garamond', serif;
+    font-size:26px;
+    margin-bottom:10px;
+    color:#4b382f;
+}
+
+.card p{
+    color:#6a564b;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+/* 標籤 */
+.tag{
+    display:inline-block;
+    padding:4px 10px;
+    font-size:12px;
+    background:#c8a97e;
+    color:white;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#241912;
+    color:#f7efe5;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+    border-top:3px solid #c8a97e;
+}
+
+/* ===== RWD ===== */
+@media(max-width:768px){
+    .banner h1{font-size:38px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">商品介紹</a>
+    <a href="hotcake.html">熱門蛋糕</a>
+    <a href="news.html">最新消息</a>
+    <a href="order.html">線上訂購</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="member.html">會員專區</a>
+</nav>
+
+<!-- Banner -->
+<div class="banner">
+    <h1>最新消息</h1>
+    <p>NEWS & OFFERS</p>
+</div>
+
+<!-- 內容 -->
+<div class="container">
+
+    <div class="title">
+        <h2>甜點活動與優惠</h2>
+        <p>最新品牌活動與限時優惠</p>
+    </div>
+
+    <div class="news-grid">
+
+        <!-- 活動1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1200&auto=format&fit=crop" alt="草莓蛋糕優惠">
+            <div class="card-content">
+                <span class="tag">限時優惠</span>
+                <h3>草莓蛋糕第二件半價</h3>
+                <p>即日起至本月月底，草莓系列甜點享第二件半價優惠。</p>
+                <p>Buy one get second half price for strawberry cakes.</p>
+            </div>
+        </div>
+
+        <!-- 活動2 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1200&auto=format&fit=crop" alt="巧克力蛋糕活動">
+            <div class="card-content">
+                <span class="tag">人氣推薦</span>
+                <h3>巧克力經典蛋糕熱銷中</h3>
+                <p>每日限量手作，濃郁黑巧克力口感深受顧客喜愛。</p>
+                <p>Our signature chocolate cake is freshly baked daily.</p>
+            </div>
+        </div>
+
+        <!-- 活動3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop" alt="會員優惠">
+            <div class="card-content">
+                <span class="tag">會員專屬</span>
+                <h3>會員生日免費蛋糕券</h3>
+                <p>加入會員即可享生日當月免費切片蛋糕一份。</p>
+                <p>Members receive a free cake slice on their birthday month.</p>
+            </div>
+        </div>
+
+        <!-- 活動4 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1200&auto=format&fit=crop" alt="下午茶活動">
+            <div class="card-content">
+                <span class="tag">新品活動</span>
+                <h3>英倫下午茶套餐上市</h3>
+                <p>紅茶＋蛋糕組合，打造優雅午後時光體驗。</p>
+                <p>New British afternoon tea set is now available.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 薰仔蛋糕店 ｜ British Classic Dessert House
+</footer>
+
+</body>
+</html>

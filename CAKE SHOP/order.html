@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>線上訂購｜薰仔蛋糕店</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== 基本 ===== */
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    background:#f6f1ea;
+    color:#3d3028;
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.8;
+}
+
+/* ===== NAV ===== */
+nav{
+    background:#2a1f18;
+    text-align:center;
+    padding:18px;
+    border-bottom:2px solid #c8a97e;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+nav a{
+    color:#f8f2eb;
+    text-decoration:none;
+    margin:0 16px;
+    font-family:'Cormorant Garamond', serif;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+nav a:hover{
+    color:#d8bc94;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:40vh;
+    background:
+    linear-gradient(rgba(20,15,10,0.6), rgba(20,15,10,0.6)),
+    url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1600&auto=format&fit=crop')
+    center/cover no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-family:'Cormorant+Garamond', serif;
+    font-size:54px;
+    letter-spacing:5px;
+}
+
+.hero p{
+    margin-top:10px;
+    color:#f2e7d7;
+}
+
+/* ===== 內容 ===== */
+.container{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.container h2{
+    font-family:'Cormorant Garamond', serif;
+    font-size:42px;
+    margin-bottom:10px;
+    color:#4b382f;
+}
+
+.container p{
+    color:#7a6558;
+    margin-bottom:40px;
+}
+
+/* ===== 表單區塊 ===== */
+.form-box{
+    width:100%;
+    height:800px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#241912;
+    color:#f7efe5;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+    border-top:3px solid #c8a97e;
+}
+
+/* ===== RWD ===== */
+@media(max-width:768px){
+    .hero h1{font-size:38px;}
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <a href="index.html">首頁</a>
+    <a href="about.html">關於我們</a>
+    <a href="products.html">商品介紹</a>
+    <a href="hotcake.html">熱門蛋糕</a>
+    <a href="news.html">最新消息</a>
+    <a href="order.html">線上訂購</a>
+    <a href="contact.html">聯絡我們</a>
+    <a href="member.html">會員專區</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>線上訂購</h1>
+    <p>ORDER ONLINE</p>
+</div>
+
+<!-- 內容 -->
+<div class="container">
+
+    <h2>立即填寫訂購表單</h2>
+    <p>Fill in the form below to place your order</p>
+
+    <!-- Google Form 嵌入 -->
+    <iframe class="form-box"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdf81U8L1Kb8neyPjHkt5gH9kDF5Re7hRMZJu9nHp020QSV2Q/viewform?embedded=true">
+        載入中...
+    </iframe>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2025 薰仔蛋糕店 ｜ British Classic Dessert House
+</footer>
+
+</body>
+</html>
